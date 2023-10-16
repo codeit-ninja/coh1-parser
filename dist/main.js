@@ -5,6 +5,7 @@ import { triggers } from './triggers.js';
 import Player from './game2/Player.js';
 import { getPlayerSlotByIndex, randomId } from './utils.js';
 import { maps } from './constants.js';
+import config from './config.js';
 log.on('LOG:STARTED', () => {
     coh.running = true;
 });
@@ -82,5 +83,4 @@ log.on('LOG:ENDED', () => {
     coh.running = false;
     coh.steamId = undefined;
 });
-coh.on('GAME:LOST', console.log);
-export { log, coh, lobby, triggers };
+export { log, coh, lobby, triggers, config };
