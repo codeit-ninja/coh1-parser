@@ -17,6 +17,7 @@ import type {
     LobbyPopulatedSteamId,
     LogEvents
 } from './types.js';
+import config from './config.js';
 
 log.on('LOG:STARTED', () => {
     coh.running = true;
@@ -126,6 +127,7 @@ export {
     coh,
     lobby,
     triggers,
+    config,
     CoHEvents,
     CoHMaps,
     ILobby,
