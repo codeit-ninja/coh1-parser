@@ -1,4 +1,5 @@
 {
+    "name": "coh1-parser",
     "scripts": {
         "dev": "tsx watch src/main.ts",
         "tsc": "tsc --init",
