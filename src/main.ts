@@ -120,8 +120,6 @@ log.on('LOG:ENDED', () => {
     coh.steamId = undefined;
 })
 
-coh.on('GAME:LOST', console.log)
-
 export {
     log,
     coh,
