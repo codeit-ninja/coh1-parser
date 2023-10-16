@@ -7,6 +7,7 @@ import {
     whitespace,
     word
 } from "magic-regexp";
+import type { LogEvents } from "./types.js";
 
 export const triggers: Record<keyof LogEvents, RegExp> = {
     'LOG:STARTED': createRegExp(

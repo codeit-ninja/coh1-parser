@@ -1,6 +1,4 @@
-import type { CoHMaps } from "./types.js";
-
-export const maps: CoHMaps[] = [
+export const maps = [
     '2p_angoville farms',
     '2p_beach_assault',
     '2p_beaux lowlands',
@@ -45,4 +43,4 @@ export const maps: CoHMaps[] = [
     '8p_route_n13',
     '8p_steel_pact',
     '6p_red_ball_express'
-]
+];

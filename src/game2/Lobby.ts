@@ -1,4 +1,5 @@
 import { Events } from "../Events.js";
+import type { ILobby, IPlayer, LobbyEvents } from "../types.js";
 import { Map } from "./Map.js";
 
 export default class Lobby extends Events<LobbyEvents> implements ILobby {

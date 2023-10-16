@@ -1,26 +1,22 @@
 {
     "scripts": {
         "dev": "tsx watch src/main.ts",
-        "tsc": "tsc --init"
+        "tsc": "tsc --init",
+        "build": "tsc --declaration"
     },
+    "main": "dist/main.js",
+    "types": "dist/main.d.ts",
     "type": "module",
     "devDependencies": {
         "@types/lodash-es": "^4.17.9",
         "@types/node": "^20.8.4",
-        "nodemon": "^3.0.1",
-        "ts-node": "^10.9.1",
-        "ts-node-dev": "^2.0.0",
         "tsx": "^3.13.0",
-        "typescript": "^5.2.2",
-        "vite": "^4.4.11",
-        "vite-node": "^0.34.6"
+        "typescript": "^5.2.2"
     },
     "dependencies": {
-        "emittery": "^1.0.1",
         "eventemitter3": "^5.0.1",
         "lodash-es": "^4.17.21",
         "magic-regexp": "^0.7.0",
-        "platform-folders": "^0.6.0",
-        "typed-regexp": "^1.0.4"
+        "platform-folders": "^0.6.0"
     }
 }
