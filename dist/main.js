@@ -6,9 +6,6 @@ import Player from './game2/Player.js';
 import { getPlayerSlotByIndex, randomId } from './utils.js';
 import { maps } from './constants.js';
 import config from './config.js';
-if (!config.pathToWarnings) {
-    throw new Error('Set the path to warnings.log in the config object first.');
-}
 log.on('LOG:STARTED', () => {
     coh.running = true;
 });
