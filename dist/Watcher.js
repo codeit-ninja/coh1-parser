@@ -12,6 +12,9 @@ export default class Watcher extends EventEmitter {
         setInterval(() => this.watch(), 1000);
     }
     watch() {
+        if (!config.pathToWarnings) {
+            return;
+        }
         try {
             const { size } = statSync(config.pathToWarnings);
             this.size.prev = this.size.current;

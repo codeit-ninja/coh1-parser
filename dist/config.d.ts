@@ -1,4 +1,4 @@
 declare const _default: {
-    pathToWarnings: string;
+    pathToWarnings: any;
 };
 export default _default;
