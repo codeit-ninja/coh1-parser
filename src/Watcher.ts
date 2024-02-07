@@ -19,6 +19,10 @@ export default class Watcher extends EventEmitter {
     }
 
     private watch() {
+        if( ! config.pathToWarnings ) {
+            return;
+        }
+        
         try {
             const { size } = statSync(config.pathToWarnings);
 

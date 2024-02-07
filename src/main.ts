@@ -19,6 +19,10 @@ import type {
 } from './types.js';
 import config from './config.js';
 
+if( ! config.pathToWarnings ) {
+    throw new Error('Set the path to warnings.log in the config object first.')
+}
+
 log.on('LOG:STARTED', () => {
     coh.running = true;
 })

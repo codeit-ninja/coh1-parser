@@ -1,24 +1,23 @@
 {
-    "name": "coh1-parser",
-    "version": "1.0.2",
-    "scripts": {
-        "dev": "tsx watch src/main.ts",
-        "tsc": "tsc --init",
-        "build": "tsc --declaration"
-    },
-    "main": "dist/main.js",
-    "types": "dist/main.d.ts",
-    "type": "module",
-    "devDependencies": {
-        "@types/lodash-es": "^4.17.9",
-        "@types/node": "^20.8.4",
-        "tsx": "^3.13.0",
-        "typescript": "^5.2.2"
-    },
-    "dependencies": {
-        "eventemitter3": "^5.0.1",
-        "lodash-es": "^4.17.21",
-        "magic-regexp": "^0.7.0",
-        "platform-folders": "^0.6.0"
-    }
+  "name": "coh1-parser",
+  "version": "1.0.2",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "tsc": "tsc --init",
+    "build": "tsc --declaration"
+  },
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.9",
+    "@types/node": "^20.8.4",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "eventemitter3": "^5.0.1",
+    "lodash-es": "^4.17.21",
+    "magic-regexp": "^0.7.0"
+  }
 }
