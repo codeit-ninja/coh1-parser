@@ -32,7 +32,7 @@ export const triggers = {
         .groupedAs('type')),
     'LOG:LOBBY:POPULATING:COMPLETE': createRegExp(exactly('GAME -- *** Beginning mission')),
     'LOG:LOBBY:PLAYER:RESULT': createRegExp(exactly('ReportMatchResults - '), exactly(word, ':', oneOrMore(digit), ', ').times(3), exactly('uid:', oneOrMore(digit), ':'), oneOrMore(digit).groupedAs('playerId'), exactly(', ', 'result:', oneOrMore(digit), ':'), exactly(word).groupedAs('result')),
-    'LOG:LOBBY:STARTED': createRegExp(exactly('GameObj::StartGameObj')),
+    'LOG:LOBBY:STARTED': createRegExp(exactly('GAME -- Starting mission')),
     'LOG:LOBBY:GAMEOVER': createRegExp(exactly('GameObj::DoGameOverPopup')),
     'LOG:LOBBY:DESTROYED': createRegExp(exactly('APP -- Game Stop'))
 };

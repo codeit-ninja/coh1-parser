@@ -1,6 +1,6 @@
 {
   "name": "coh1-parser",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "scripts": {
     "dev": "tsx watch src/main.ts",
     "tsc": "tsc --init",
