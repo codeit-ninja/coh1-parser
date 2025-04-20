@@ -104,7 +104,7 @@ export const triggers: Record<keyof LogEvents, RegExp> = {
         exactly(word).groupedAs('result')
     ),
     'LOG:LOBBY:STARTED': createRegExp(
-        exactly('GameObj::StartGameObj')
+        exactly('GAME -- Starting mission')
     ),
     'LOG:LOBBY:GAMEOVER': createRegExp(
         exactly('GameObj::DoGameOverPopup')
